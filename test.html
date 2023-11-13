@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: black;
+            color: #666;
+            text-align: center;
+        }
+
+
+        audio {
+            width: 450px;
+            margin: 30px 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            height: 420px;
+            overflow: hidden;
+            /*border: 2px solid #fff;*/
+        }
+
+        .container li {
+            height: 30px;
+            line-height: 30px;
+            transition: .2s;
+        }
+
+        .container ul {
+            /*border: 2px solid #fff;*/
+            transition: all .2s;
+        }
+
+        .container li.active {
+            color: white;
+            transform: scale(1.6);
+        }
+    </style>
+</head>
+<body>
+<audio src="C4000047Ix1o46W0dy.m4a" controls>
+    <p>您的浏览器不支持该标签</p>
+</audio>
+<div class="container">
+    <ul class="lrc-list">
+    </ul>
+</div>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
